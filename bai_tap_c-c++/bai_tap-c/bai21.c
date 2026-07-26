@@ -5,29 +5,25 @@
 //Output: DCBA
 #include <stdio.h>
 #include <string.h>
-
 int main() {
-    char str[100];
+    char ki[60];
 
-    printf("Nhap chuoi: ");
-    fgets(str, sizeof(str), stdin);
+    printf("nhap ki tu: ");
+    fgets(ki, sizeof(ki), stdin);
+    ki[strcspn (ki, "\n")]= '\0';
 
-    // Xóa ký tự '\n' nếu có
-    str[strcspn(str, "\n")] = '\0';
-
-    int left = 0;
-    int right = strlen(str) - 1;
+    int left = 0; // phần bền trái 
+    int right = strlen(ki) - 1; //phải nó sẽ bị thụt 1 giá trị
 
     while (left < right) {
-        char temp = str[left];
-        str[left] = str[right];
-        str[right] = temp;
+        char temp = ki[left];
+        ki[left] = ki[right];
+        ki[right] = temp;
 
-        left++;
-        right--;
+        left++; // tăng lên 2 giá trị
+        right--; // phải sẽ gaimr 2 giá trị
     }
-
-    printf("Chuoi dao nguoc: %s", str);
+    printf("%s",ki);
 
     return 0;
 }

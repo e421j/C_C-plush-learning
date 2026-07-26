@@ -1,0 +1,6 @@
+NORMAL|WHITE|50|Bọn mày nên nhớ rằng
+NORMAL|WHITE|42|Tao có thể cân 1000 thằng Vũ Hà Bách
+NORMAL|WHITE|45|Nhưng 1 thằng thì đéo
+RANDOM|RED|90|BANKAI
+NORMAL|WHITE|60|Bá vào đây mấy thằng nhóc
+UPSIDE_DOWN|PURPLE|50|Sakashima Yokoshima Happōfusagari
